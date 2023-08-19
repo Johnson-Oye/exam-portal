@@ -1,22 +1,20 @@
-import Home from '../Pages/Home';
-import Announcement from '../Pages/Announcement';
-import Events from '../Pages/Events';
-import History from '../Pages/History';
-import About from '../Pages/About';
-import Layout from '../Pages/Layout';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
+import Home from "./../Pages/Home";
+import History from "./../Pages/History";
+import Announcement from "./../Pages/Announcement";
+import Events from "./../Pages/Events";
+import About from "./../Pages/About";
 
-export const AllRoutes = () => {
-    return (
-    
-      <Routes>
-            <Route index element={<Home />} />
-            <Route path="/" element={<Layout />} />
-          <Route path="/history" element={<History/>} />
-          <Route path="/announcement" element={<Announcement/>} />
-          <Route path="/events" element={<Events/>} />
-          <Route path="/about" element={<About/>} />
-        </Routes>
-      
-    );
-  };
+function AllRoutes() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/history" element={<History />} />
+      <Route path="/announcement" element={<Announcement />} />
+      <Route path="/events" element={<Events />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  );
+}
+
+export default AllRoutes;
