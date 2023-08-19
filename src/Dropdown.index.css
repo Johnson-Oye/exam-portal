@@ -1,0 +1,19 @@
+.Dropdown {
+    background-color: red;
+    width: 300px;
+    height: 30px;
+}
+
+.Dropdown select {
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.Dropdown option {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
